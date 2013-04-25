@@ -1,5 +1,6 @@
 /**
  * Author: meimeidev
+ * Update: mamacmm
  */
 
 !function($){
@@ -709,6 +710,16 @@
 
             //合并load的参数
             params = $.extend(params, args);
+            if(params.method){
+            	opts.method = params.method;
+            }
+            if(params.url){
+            	opts.url = params.url;
+            }
+            if(params.params){
+            	params = params.params;
+            }
+            
             $.ajax({
                 type: opts.method,
                 url: opts.url,

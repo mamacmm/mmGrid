@@ -67,8 +67,7 @@
 .mmGrid .mmg-headWrapper{
     position: relative;
     overflow: hidden;
-    width: 9999px;
-
+	width:100%;
     background: #eee; /* Old browsers */
     background: -moz-linear-gradient(top,  #238ED3 0%, #238ED3 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#238ED3), color-stop(100%,#238ED3)); /* Chrome,Safari4+ */
@@ -83,7 +82,8 @@
     box-shadow: 0 0px 2px #bbb;
     border-top: 2px solid #2696D8;
     z-index: 1;
-
+	float:left;
+	color: white;
 }
 
 /* 标题 */
@@ -126,7 +126,7 @@
     font-weight: bold;
     line-height: 2;
     vertical-align: top;
-    color: white;
+    color: #fff;
 }
 
 .mmGrid .mmg-headWrapper .mmg-head th .mmg-titleWrapper .mmg-canSort{

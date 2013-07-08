@@ -1,6 +1,5 @@
 /**
  * Author: meimeidev
- * Update: mamacmm
  */
 
 !function($){
@@ -676,7 +675,7 @@
 
         , _loadAjax: function(args){
             var that = this;
-            var opts = this.opts;
+            var opts = this.data('mmGrid').opts;
             var params = {};
             //opt的params可以使函数，例如收集过滤的参数
             if($.isFunction(opts.params)){

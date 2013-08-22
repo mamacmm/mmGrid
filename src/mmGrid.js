@@ -675,7 +675,13 @@
 
         , _loadAjax: function(args){
             var that = this;
-            var opts = this.data('mmGrid').opts;
+            var opts = {};
+            if(that.data){
+            	opts = that.data('mmGrid').opts;
+            }else{
+            	opts = that.opts;
+            }
+            //var opts = this.data('mmGrid').opts;
             var params = {};
             //opt的params可以使函数，例如收集过滤的参数
             if($.isFunction(opts.params)){
